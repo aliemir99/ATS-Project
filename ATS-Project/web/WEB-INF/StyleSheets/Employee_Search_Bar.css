@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 16, 2020, 2:32:48 PM
+    Author     : jber5
+*/
+
+ /* Style the search field */
+    form.searchBar input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+    }
+
+    /* Style the submit button */
+    form.searchBar button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+    }
+
+    form.searchBar button:hover {
+        background: #0b7dda;
+    }
+
+    /* Clear floats */
+    form.searchBar::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    
+    
+    /* Basic Config
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+    ul {
+        list-style-type: none;
+        padding-left: 50px;
+        margin: 0;
+    }
+
+    li {
+        display: block;
+        position: relative;
+        padding: 20px 0px;
+    }
+    
+    /* Card
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    #searchCard {
+        display: flex;
+        flex-direction: column;	
+        background: #FDFBFB;
+        width: 300px;
+        padding: 20px 25px;
+        border-radius: 20px;
+
+    }
+
+    /* Radio Button
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    input[type=radio] {
+        position: relative;
+        visibility: hidden;
+    }
+
+    label { 
+        cursor: pointer; 
+        font-weight: 400;
+    }
+
+    .check {
+        width: 30px; height: 30px;
+        position: absolute;
+        border-radius: 50%;
+        transition: transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    /* Reset */
+    input#one ~ .check { 
+        transform: translate(-50px, -35px); 
+        background: #B2D7F5; 
+    }
+    input#two ~ .check { 
+        transform: translate(-50px, -100px); 
+        background: #2196F3;
+        box-shadow: 0 6px 12px rgba(33, 150, 243, 0.35);
+    }
+
+    /* Radio Input #1 */
+    input#one:checked ~ .check { transform: translate(-50px, 40px); }
+
+    /* Radio Input #2  */
+    input#two:checked ~ .check { transform: translate(-50px, -35px); }

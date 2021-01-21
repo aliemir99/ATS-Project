@@ -1,0 +1,9 @@
+<%-- any content can be specified here e.g.: --%>
+<%--Purpose: this JSPF page for the footer ---%>
+<%@ page pageEncoding="UTF-8" %>
+
+<footer class="bg-light pb-5">
+  <div class="container text-center">
+    <p class="font-italic text-muted mb-0">&copy; Copyrights ATS All rights reserved.</p>
+  </div>
+</footer>
